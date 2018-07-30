@@ -1,0 +1,25 @@
+{
+  "name": "project-2-wod-gen.",
+  "version": "1.0.0",
+  "description": "Fitness Gen.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnpearson4850/Project-2-WOD-gen..git"
+  },
+  "author": "Josh Pearson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnpearson4850/Project-2-WOD-gen./issues"
+  },
+  "homepage": "https://github.com/jnpearson4850/Project-2-WOD-gen.#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "hbs": "^4.0.1",
+    "mongoose": "^5.2.5"
+  }
+}
