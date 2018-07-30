@@ -1,6 +1,6 @@
-const mongoose = require("mongoose") //required mongoose but this syntax may be wrong
+const mongoose = require("mongoose") 
 
-mongoose.connect("mongoddb://localhost/db_name")
+// mongoose.connect("mongoddb://localhost/db_name") firgure out database name
 
 mongoose.Promise = Promise
 

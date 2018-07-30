@@ -1,10 +1,9 @@
 //UNSUre if set up was done correctly
-
-
 const mongoose = require("../db/connection")
-const myModel = mongoose.model("modelName", mySchema)
+const Workout = mongoose.Schema
 
-const Workout = new mongoose.Schema({
+const Workout = new Schema({
+    rounds: "string",
     movement1: "string",
     movement2: "string", 
     movement3: "string",
@@ -17,4 +16,4 @@ const Workout = new mongoose.Schema({
 
 
 
-module.exports = myModel
+module.exports = mongoose.Workout

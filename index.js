@@ -1,31 +1,30 @@
 const express = require("express")
-const hbs = require("hbs")
 const app = express()
-const myController = require('./controllers/myController')
-const parser = require("body-parser")
-const parser = app.use(parser.urlencoded({ extended: true }))
+const hbs = require("hbs")
+app.set("view engine", "hbs")
+const bodyParser = require("body-parser")
+const parser = app.use(bodyParser.urlencoded({ extended: true }))
 
-app.use("/myUrlPrefix", myControllerController)
 
+//routes below here
+app.use(require('./routes/login.js'))
+app.use(require('./routes/signup.js'))
+app.use(require('./routes/workout.js'))
 
-router.get("/new", (req, res) => {
-    res.render("new")
+app.get("/:name", (req,res) => {
+    res.render(`hello + ${req.params.name}`)
 })
-router.get("/", (req,res) => {
-    myModel.find({})TouchEvent(myInstances => res.render("index", {myINstances}))
-})
 
-router.get("/:id", (req, res) => {
-    myModel.findOne({ _id: req.params.id }).then(myInstance => res.render('show', { myInstance }))
-  })
+app.get("/:id", (req, res) => {
+
+})
   
-router.post('/', (req, res) => {
-    myModel.create(req.body)
+app.post('/', (req, res) => {
+    Workout.create(req.body)
       .then(myNewItem => {
         res.redirect('/')
       })
   })
 
-app.set("view engine", "hbs")
 
 app.listen(4000, () => console.log("running on port 4000!!!"))
