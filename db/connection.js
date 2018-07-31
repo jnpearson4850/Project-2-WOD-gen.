@@ -1,6 +1,6 @@
 const mongoose = require("mongoose") 
 
-// mongoose.connect("mongoddb://localhost/db_name") firgure out database name
+mongoose.connect("mongodb://localhost/workout") 
 
 mongoose.Promise = Promise
 

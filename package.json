@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jnpearson4850/Project-2-WOD-gen.#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "hbs": "^4.0.1",

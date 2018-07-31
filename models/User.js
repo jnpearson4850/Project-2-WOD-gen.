@@ -1,22 +1,22 @@
 //UNSUre if set up was done correctly
 
 const mongoose = require("../db/connection")
-const UserSignUp = mongoose.UserSignUp
+const Schema = mongoose.Schema
 
 
 const User = new Schema ({
     local: {
         email: "string",
         password: "string",
-        default: Date.now()
-    },
-    post: [
-        {
-            type: Schema.Types.ObjectId,
-            ref: "post"
-        }
-    ]
+        // default: Date.now()
+    }
+    // comment: [
+    //     {
+    //         type: Schema.Types.ObjectId,
+    //         ref: "comment"
+    //     }
+    // ]
 });
 
 
-module.exports = mongoose.UserSignUp("User", User)
+module.exports = mongoose.model("User", User)
