@@ -1,0 +1,16 @@
+{{#if comments}}
+<ul class="comments">
+    {{#each comments}}
+    <div class="card">
+        <div class="card-content">
+            <a class="card-title" href="/comment/{{id}}">
+            {{ content}}
+            </a>
+            </div>
+            <div class="card-action">
+                <a href="/user/{{author.id }}" class=""> {{ author.local.email}}</a>
+            </div>
+        </div>
+        {{/each}}
+</ul>
+{{/if}}
