@@ -4,7 +4,7 @@ const { Comment } = require("../models/Workout")
 
 module.exports = {
     index: (req, res) => {
-        res.send('this is the user index')
+        res.send('user/new')
     },
     show: (req, res) => {
       User.findOne({ _id: req.params.id })
@@ -27,5 +27,5 @@ module.exports = {
         }).then(user => {
             res.redirect(`/user/${user.id}`)
         })
-    },
+    }
 }

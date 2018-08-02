@@ -1,31 +1,101 @@
 body {
-    border: 10px solid red;
-    background: rgba(76,76,76,1);
-}
+    background: -webkit-linear-gradient(left, #2c2c2c 0%,#050505 0%,#050505 18%,#595959 41%,#666666 53%,#474747 62%,#000000 79%,#111111 87%,#131313 92%,#2b2b2b 99%,#1c1c1c 100%);}
 .site-header {
+    display: flex;
+    justify-content: center;
     font-family: 'Orbitron', sans-serif;
     font-size: 25px;
     color: whitesmoke;
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0); 
+    width: 100%;
+    border-width: 10px;
+    /* background: black; */
 }
 a {
     color: whitesmoke;
 }
+.topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+.new{
+    color: #f2f2f2;
+    border: 3px solid white;
+    text-align: center;
+    margin: auto 5px;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.return-user {
+    color: #f2f2f2;
+    border: 3px solid white;
+    text-align: center;
+    margin: auto 5px;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+.welcome-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+.picture {
+    border-radius: 125px;
+    align-content: space-between;
+    width: 400px;
+    height: 400px;
+    border: white 3px solid;
+    margin: 5px;
+}
+.picture1 {
+    border-radius: 125px;
+    align-content: space-between;
+    width: 400px;
+    height: 400px;
+    border: white 3px solid;
+    margin: 5px;
+
+}
+.picture2 {
+    border-radius: 125px;
+    align-content: space-between;
+    width: 400px;
+    height: 400px;
+    border: white 3px solid;
+    margin: 5px;
+
+}
+
 footer {
+    display: flex;
+    justify-content: center;
     font-family: 'Orbitron', sans-serif;
     font-size: 18px;
     color: whitesmoke;
     text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
+    -1px -1px 0 rgb(0, 0, 255),
+    1px -1px 0 rgb(0, 0, 255),
+    -1px 1px 0 rgb(0, 0, 255),
+    1px 1px 0 rgb(0, 0, 255); 
+    position:absolute;
+   bottom:25px;
+   width:100%;
 }
-.button {
+/* .button {
     position: relative;
     background-color: rgb(87, 121, 166);
     border: none;
@@ -35,7 +105,7 @@ footer {
     width: 200px;
     text-align: center;
     -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
+    /* transition-duration: 0.4s;
     text-decoration: none;
     overflow: hidden;
     cursor: pointer;
@@ -59,4 +129,4 @@ footer {
     margin: 0;
     opacity: 1;
     transition: 0s
-}
+} */ 
