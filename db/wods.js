@@ -5,15 +5,15 @@ const { Wods } = require("../models/Workout")
 User.find({}).remove(() => {
     Comment.find({}).remove(() => {
       let admin = User.create({
-        content: "for time", 
-        rounds: "5 rouds",
-        movement1: "1 a",
-        movement2: "1 b", 
-        movement3: "1 nd",
-        movement4: "1 nd", 
-        movement5: "1 nd",
-        movement6: "1 nd",
-        movement7: "1 nd",
-        comments: ["1 nd"]
+        content: String, 
+        rounds: String,
+        movement1: String,
+        movement2: String, 
+        movement3: String,
+        movement4: String, 
+        movement5: String,
+        movement6: String,
+        movement7: String,
+        comments: [String]
           
  } } })))

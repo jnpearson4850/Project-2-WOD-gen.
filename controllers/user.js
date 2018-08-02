@@ -1,8 +1,11 @@
 const User = require("../models/User")
 const { Comment } = require("../models/Workout")
-const passport = require("passport")
+// const passport = require("passport")
 
 module.exports = {
+    index: (req, res) => {
+        res.send('this is the user index')
+    },
     show: (req, res) => {
       User.findOne({ _id: req.params.id })
         .populate({
@@ -22,7 +25,7 @@ module.exports = {
                 password: req.body.password
             }
         }).then(user => {
-            res.redirect(`/user/${user.+id}`)
+            res.redirect(`/user/${user.id}`)
         })
-    }
+    },
 }
