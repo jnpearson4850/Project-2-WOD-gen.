@@ -6,7 +6,7 @@ module.exports = {
         Comment.find({})
         .populate("author")
         .then(comment => {
-            res.render("comment/new", { comment })
+            res.render("comment/", { comment })
         })
     },show: (req, res) => {
         Comment.find({})
