@@ -13,7 +13,6 @@ body {
     1px 1px 0 rgb(0, 0, 0); 
     width: 100%;
     border-width: 10px;
-    /* background: black; */
 }
 a {
     color: whitesmoke;
@@ -24,6 +23,8 @@ a {
     justify-content: center;
     align-items: center;
     padding: 10px 10px;
+    font-family: 'Orbitron', sans-serif;
+
 }
 .new{
     color: #f2f2f2;
@@ -54,32 +55,31 @@ a {
     padding: 10px 10px;
 }
 .picture {
-    border-radius: 125px;
+    border-radius: 250px;
     align-content: space-between;
-    width: 400px;
-    height: 400px;
+    width: 410px;
+    height: 390px;
     border: white 3px solid;
     margin: 5px;
 }
 .picture1 {
-    border-radius: 125px;
+    border-radius: 250px;
     align-content: space-between;
-    width: 400px;
-    height: 400px;
+    width: 410px;
+    height: 390px;
     border: white 3px solid;
     margin: 5px;
 
 }
 .picture2 {
-    border-radius: 125px;
+    border-radius: 250px;
     align-content: space-between;
-    width: 400px;
-    height: 400px;
+    width: 410px;
+    height: 390px;
     border: white 3px solid;
     margin: 5px;
 
 }
-
 footer {
     display: flex;
     justify-content: center;
@@ -87,13 +87,29 @@ footer {
     font-size: 18px;
     color: whitesmoke;
     text-shadow:
-    -1px -1px 0 rgb(0, 0, 255),
-    1px -1px 0 rgb(0, 0, 255),
-    -1px 1px 0 rgb(0, 0, 255),
-    1px 1px 0 rgb(0, 0, 255); 
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0); 
     position:absolute;
-   bottom:25px;
-   width:100%;
+     bottom:25px;
+    width:100%;
+}
+.sign-up{
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    width: 410px;
+    height: 390px;
+    border: white 3px solid;
+    margin: auto;
+    box-shadow: 10px 10px 52px 0px rgba(255,255,255,1);
+}
+.input-field {
+    border-radius: 20px;
+    width: 100%;
+    padding: 25px 40px;
+    margin: 40px 0;
 }
 /* .button {
     position: relative;
