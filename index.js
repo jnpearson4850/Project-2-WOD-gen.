@@ -14,4 +14,8 @@ app.use(require('./routes/comment.js'))
 app.use(require('./routes/user.js'))
 app.use(require('./routes/workout.js'))
 
-app.listen(4000, () => console.log("running on port 4000!!!"))
+app.set('port', process.env.PORT || 3001)
+
+app.listen(app.get('port'), () => {
+  console.log(`✅ PORT: ${app.get('port')} 🌟`)
+})

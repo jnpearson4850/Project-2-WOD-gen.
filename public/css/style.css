@@ -15,7 +15,7 @@ body {
     border-width: 10px;
 }
 a {
-    color: whitesmoke;
+    color: rgb(82, 170, 218);
 }
 .topnav {
     display: flex;
@@ -100,17 +100,28 @@ footer {
     justify-content: center;
     border-radius: 50px;
     width: 410px;
-    height: 390px;
+    height: 250px;
     border: white 3px solid;
     margin: auto;
     box-shadow: 10px 10px 52px 0px rgba(255,255,255,1);
 }
-.input-field {
+
+p {
+    display: flex;
+    color:   white;
+    text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0); 
+    justify-content: center;
+    flex-direction: column;
     border-radius: 20px;
     width: 100%;
-    padding: 25px 40px;
+    padding: 30px auto;
     margin: 40px 0;
 }
+
 /* .button {
     position: relative;
     background-color: rgb(87, 121, 166);

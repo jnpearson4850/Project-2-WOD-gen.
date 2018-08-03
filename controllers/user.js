@@ -1,5 +1,5 @@
 const User = require("../models/User")
-const { Comment } = require("../models/Workout")
+// const { Comment } = require("../models/Workout")
 // const passport = require("passport")
 
 module.exports = {
